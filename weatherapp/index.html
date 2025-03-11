@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima en tu Ciudad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-900 flex items-center justify-center h-screen">
+    <div
+      class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+    >
+      <a href="#">
+        <img
+          class="rounded-t-lg"
+          src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="intro"
+        />
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Consulta el clima de tu ciudad
+          </h5>
+        </a>
+        <input
+          type="text"
+          id="city"
+          placeholder="Escribe una ciudad"
+          class="mt-4 p-2 border rounded w-full"
+        />
+        <button
+          id="search"
+          class="mt-2 bg-blue-500 text-white p-2 rounded w-full"
+        >
+          Buscar
+        </button>
+
+        <div id="weather-info" class="mt-4 rounded-lg p-2 hidden bg-gray-300">
+          <h2 id="location" class="text-xl font-semibold"></h2>
+          <p id="temperature" class="text-lg"></p>
+          <p id="condition"></p>
+          <img id="weather-icon" class="mx-auto mt-2 w-16 h-16" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
